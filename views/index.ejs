@@ -1,0 +1,40 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Public APIs</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Currency Converter</h1>
+  <form action="/convert" method="post">
+    <label for="amount">Enter amount in USD:</label>
+    <input type="number" id="amount" name="amount" required>
+    <button type="submit">Convert</button>
+  </form>
+
+  
+ <div id="conversion-result">
+    
+      <p>Converted Amount: <%= locals.convertedAmount %> TWD</p>
+    </div>
+
+ 
+  <p>Weather: <%= locals.summary %> </p>
+   
+      <p>Temperature: <%= locals.temp %> </p>
+  
+ 
+  <%= locals.hotelName %>
+ 
+  <a href="<%= locals.hotelLink %>">Visit Hotel</a>
+
+
+<p>API Basketball</p>
+<p>Receipe - Food - Nutrition</p>
+<p>SMS</p>
+
+
+</body>
+</html>
